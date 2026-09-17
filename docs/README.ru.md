@@ -1,12 +1,29 @@
-[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+<div align="center">
 
-<p align="center"><img src="../site/mark.svg" width="64" alt="SandKit"></p>
+<img src="../site/mark.svg" width="64" alt="SandKit">
 
 # SandKit
 
-Превращайте изображения и текст в интерактивные песочные анимации.
+**Превращайте изображения и текст в интерактивные песочные анимации.**
 
-[Демо](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](../docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
+
+[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+
+[Открыть демо](https://linkly.ai/sandkit) · [Начать в Codex](../GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
+
+⭐ Поставьте звезду SandKit, чтобы следить за новыми примерами и навыками.
+
+</div>
+
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit">Открыть демо →</a></p>
+<!-- DEMO:END -->
 
 ## Начало работы в Codex
 
@@ -38,8 +55,6 @@ node scripts/serve.mjs
 - Рисунки и карты глубины: мозг, Macintosh, стопка книг и пишущая машинка.
 
 Сайт содержит демонстрации и ввод текста на английском и китайском. Свои изображения создаются навыками в Codex. Глубина оценивается для эффекта параллакса и не является точным 3D-измерением.
-
-![SandKit](../skills/sandkit-art/assets/typewriter.webp)
 
 ## Разработка и документация
 

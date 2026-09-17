@@ -1,12 +1,29 @@
-[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+<div align="center">
 
-<p align="center"><img src="../site/mark.svg" width="64" alt="SandKit"></p>
+<img src="../site/mark.svg" width="64" alt="SandKit">
 
 # SandKit
 
-이미지와 텍스트를 인터랙티브 모래 애니메이션으로 만드세요.
+**이미지와 텍스트를 인터랙티브 모래 애니메이션으로 만드세요.**
 
-[데모](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](../docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
+
+[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+
+[데모 보기](https://linkly.ai/sandkit) · [Codex에서 시작](../GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
+
+⭐ Star로 새로운 예제와 스킬 업데이트를 확인하세요.
+
+</div>
+
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit">데모 보기 →</a></p>
+<!-- DEMO:END -->
 
 ## Codex에서 시작하기
 
@@ -38,8 +55,6 @@ node scripts/serve.mjs
 - 뇌, Macintosh, 책 더미, 타자기의 선화와 깊이 맵.
 
 웹사이트는 영어와 중국어 데모 및 텍스트 입력을 지원합니다. 사용자 이미지는 Codex 스킬로 만듭니다. 깊이는 시차 효과를 위한 추정치이며 정밀한 3D 측정값이 아닙니다.
-
-![SandKit](../skills/sandkit-art/assets/typewriter.webp)
 
 ## 개발 및 문서
 

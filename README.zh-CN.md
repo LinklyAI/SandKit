@@ -1,12 +1,37 @@
-[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Deutsch](docs/README.de.md) | [Русский](docs/README.ru.md)
+<div align="center">
+
+<img src="site/mark.svg" width="64" alt="SandKit">
 
 # SandKit
 
-把图片和文字变成可交互的沙画。由 [Linkly AI](https://linkly.ai/) 开源，采用 [MIT](LICENSE) 协议。
+**用两个 Agent Skills，把图片和文字变成可交互的沙画。**
 
-一张线稿决定沙粒的位置，一张可选的深度图赋予画面视差。沙粒散开、飞行，再聚成下一幅图案或文字。
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
 
-[官网演示](https://linkly.ai/sandkit/zh) · [English demo](https://linkly.ai/sandkit)
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Deutsch](docs/README.de.md) | [Русский](docs/README.ru.md)
+
+[查看沙画演示](https://linkly.ai/sandkit/zh) · [在 Codex 中使用](GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
+
+⭐ 给 SandKit 一颗 Star，关注新素材与 Skills 更新。
+
+</div>
+
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit/zh">查看沙画演示 →</a></p>
+<!-- DEMO:END -->
+
+## 为什么做 SandKit
+
+在 Codex 中完成从图片处理到动画代码的整个流程。SandKit 来自 [Linkly AI](https://linkly.ai/zh) 的引导体验，提供两个 Skills、WebGL2 渲染器、可视化编辑器和示例素材。
+
+- **[sandkit-art](skills/sandkit-art/SKILL.md)**：制作线稿与配对的估算深度图。
+- **[sandkit-build](skills/sandkit-build/SKILL.md)**：创建、接入和优化动画代码。
+- **浏览器中预览**：查看效果、体验文字；自定义图片在 Codex 中制作。
 
 ## 在 Codex 中一句话开始
 

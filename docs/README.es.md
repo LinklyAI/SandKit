@@ -1,12 +1,29 @@
-[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+<div align="center">
 
-<p align="center"><img src="../site/mark.svg" width="64" alt="SandKit"></p>
+<img src="../site/mark.svg" width="64" alt="SandKit">
 
 # SandKit
 
-Convierte imágenes y texto en animaciones de arena interactivas.
+**Convierte imágenes y texto en animaciones de arena interactivas.**
 
-[Demo](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](../docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
+
+[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+
+[Explorar la demo](https://linkly.ai/sandkit) · [Empezar en Codex](../GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
+
+⭐ Dale una estrella a SandKit para seguir nuevos ejemplos y skills.
+
+</div>
+
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit">Explorar la demo →</a></p>
+<!-- DEMO:END -->
 
 ## Empezar en Codex
 
@@ -38,8 +55,6 @@ node scripts/serve.mjs
 - Dibujos y mapas de profundidad de un cerebro, un Macintosh, una pila de libros y una máquina de escribir.
 
 La web ofrece demos y entrada de texto en inglés y chino. Las imágenes personalizadas se crean con las skills en Codex. La profundidad es una estimación para el paralaje, no una medición 3D precisa.
-
-![SandKit](../skills/sandkit-art/assets/typewriter.webp)
 
 ## Desarrollo y documentación
 

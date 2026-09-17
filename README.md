@@ -1,18 +1,37 @@
+<div align="center">
+
+<img src="site/mark.svg" width="64" alt="SandKit">
+
+# SandKit
+
+**Images and words, brought to life as interactive sand art.**
+
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
+
 [English](README.md) | [简体中文](README.zh-CN.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Deutsch](docs/README.de.md) | [Русский](docs/README.ru.md)
 
-<p align="center"><img src="site/mark.svg" width="64" alt="SandKit"></p>
+[Explore the demo](https://linkly.ai/sandkit) · [Try it in Codex](GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
 
-<h1 align="center">SandKit</h1>
-<p align="center">Images and words, brought to life as interactive sand art.</p>
-<p align="center"><a href="LICENSE">MIT</a> · WebGL2 · Zero runtime dependencies · Two agent skills</p>
-<p align="center"><a href="https://github.com/LinklyAI/SandKit/actions/workflows/check.yml"><img src="https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg" alt="Checks"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a></p>
-<p align="center"><a href="https://linkly.ai/sandkit">Demo</a> · <a href="GETTING_STARTED.md">Try it in Codex</a> · <a href="#run-locally">Run the editor</a> · <a href="https://linkly.ai/">Made by Linkly AI ↗</a> · <a href="README.zh-CN.md">简体中文</a></p>
+⭐ Star SandKit to follow new examples and skills.
 
-![Example artwork](skills/sandkit-art/assets/typewriter.webp)
+</div>
 
-An ink drawing becomes a cloud of grains. A depth map gives it parallax. The grains scatter, travel, and gather into the next image or word. Move your pointer to see the surface turn.
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit">Explore the demo →</a></p>
+<!-- DEMO:END -->
 
-SandKit grew out of the onboarding experience in **[Linkly AI](https://linkly.ai/)**. It includes a framework-independent renderer, a React adapter, a showcase, a full parameter editor, and skills that help Codex create both the artwork and the code.
+## Why SandKit
+
+Create the artwork and the animation in one Codex workflow. SandKit pairs two agent skills with a WebGL2 renderer, a visual editor, and ready-to-use samples. Built for the onboarding experience in [Linkly AI](https://linkly.ai/).
+
+- **[sandkit-art](skills/sandkit-art/SKILL.md)** — create line art and matching estimated depth maps.
+- **[sandkit-build](skills/sandkit-build/SKILL.md)** — build, integrate, and optimize the animation.
+- **Preview in the browser** — explore examples and try text; make custom images in Codex.
 
 ## One prompt in Codex
 
@@ -104,8 +123,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports should include browser, devi
 ## License and artwork
 
 [MIT](LICENSE). Included generated sample assets are offered under the same terms to the extent rights are held. See [asset provenance](skills/sandkit-art/assets/PROVENANCE.md). Apple/Macintosh and Linkly AI marks remain their owners’ marks; MIT does not grant trademark rights or endorsement.
-
-Built by **[Linkly AI](https://linkly.ai/)**. Explore the product behind the experiment.
 
 The showcase and editor ship with English and Chinese pages, crawlable static HTML, localized metadata, language links, and a sitemap. The visual style follows Linkly AI’s warm-white background and SandKit’s blue accents.
 

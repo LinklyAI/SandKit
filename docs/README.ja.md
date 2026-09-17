@@ -1,12 +1,29 @@
-[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+<div align="center">
 
-<p align="center"><img src="../site/mark.svg" width="64" alt="SandKit"></p>
+<img src="../site/mark.svg" width="64" alt="SandKit">
 
 # SandKit
 
-画像と文字をインタラクティブな砂のアニメーションに。
+**画像と文字をインタラクティブな砂のアニメーションに。**
 
-[デモ](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[![Checks](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg)](https://github.com/LinklyAI/SandKit/actions/workflows/check.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue)](../LICENSE)
+[![WebGL2](https://img.shields.io/badge/WebGL2-zero_runtime_dependencies-4a71ee)](../docs/API.md)
+[![Stars](https://img.shields.io/github/stars/LinklyAI/SandKit?color=4a71ee)](https://github.com/LinklyAI/SandKit)
+[![X](https://img.shields.io/badge/X-%40linkly_ai-000000?logo=x&logoColor=white)](https://x.com/linkly_ai)
+
+[English](../README.md) | [简体中文](../README.zh-CN.md) | [日本語](../docs/README.ja.md) | [한국어](../docs/README.ko.md) | [Español](../docs/README.es.md) | [Deutsch](../docs/README.de.md) | [Русский](../docs/README.ru.md)
+
+[デモを見る](https://linkly.ai/sandkit) · [Codex で始める](../GETTING_STARTED.md) · [Linkly AI](https://linkly.ai/)
+
+⭐ Star で新しいサンプルとスキルの更新をチェック。
+
+</div>
+
+<!-- DEMO:START -->
+<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+<p align="center"><a href="https://linkly.ai/sandkit">デモを見る →</a></p>
+<!-- DEMO:END -->
 
 ## Codex で始める
 
@@ -38,8 +55,6 @@ node scripts/serve.mjs
 - 脳、Macintosh、本の山、タイプライターの線画と深度マップ。
 
 サイトは英語と中国語のデモと文字入力に対応しています。独自の画像は Codex のスキルで作成します。深度は視差表現用の推定値で、正確な 3D 計測ではありません。
-
-![SandKit](../skills/sandkit-art/assets/typewriter.webp)
 
 ## 開発とドキュメント
 
