@@ -322,3 +322,13 @@ nav {gap:10px;flex-wrap:wrap}
 .create .prompt {padding:16px}
 .create .prompt code {font-size:13px}
 }
+
+.create,.product {min-height:620px;display:flex;flex-direction:column;justify-content:center;padding-top:110px;padding-bottom:110px}
+.create .actions,.product .actions {align-self:flex-start}
+footer {align-items:center}
+.footer-links {margin-left:auto;display:flex;justify-content:flex-end;align-items:center;gap:24px;flex-wrap:wrap}
+@media(max-width:760px) {
+.create,.product {min-height:560px;padding-top:88px;padding-bottom:88px}
+footer {gap:20px;font-size:10px}
+.footer-links {gap:16px}
+}

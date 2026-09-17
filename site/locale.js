@@ -1,5 +1,6 @@
 // Shared by static HTML generation and browser controls. English is the source locale.
 export const zh = {
+'X ↗':'X ↗','Linkly AI on X':'Linkly AI 的 X 账号',
 'BUILT WITH':'BUILT WITH',
 'Linkly AI':'Linkly AI',
 'The knowledge brain for AI agents. Search and read your notes, documents, audio and videos from your agent.':'AI Agent 的知识大脑。让 Agent 检索和阅读你的笔记、文档、音频与视频。',
