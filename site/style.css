@@ -4,8 +4,10 @@
   --ink:#0a0a0a;
   --muted:#737373;
   --line:#e5e5e5;
-  --accent:#b45309;
-  --soft:#fef3c7;
+  --accent:#4a71ee;
+  --accent-hover:#365bd4;
+  --accent-ink:#ffffff;
+  --soft:#eaf0ff;
   color-scheme:light;
   font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;
   background:var(--bg);
@@ -17,8 +19,10 @@
   --ink:#fafafa;
   --muted:#a1a1a1;
   --line:#282828;
-  --accent:#fbbf24;
-  --soft:#352914;
+  --accent:#9bb1ff;
+  --accent-hover:#b6c4ff;
+  --accent-ink:#141b30;
+  --soft:#242e4a;
   color-scheme:dark}
 * {
   box-sizing:border-box}
@@ -295,8 +299,8 @@ footer {
 .create .actions {justify-content:flex-start;margin-bottom:0}
 .prompt {max-width:none;margin:20px 0;padding:16px;background:transparent;border:0;border-left:2px solid var(--line)}
 .language-link {border:1px solid var(--line);padding:7px 10px;white-space:nowrap}
-.primary {background:#f59e0b;border-color:#f59e0b;color:#1c1206}
-.primary:hover {background:#d97706;border-color:#d97706}
+.primary {background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.primary:hover {background:var(--accent-hover);border-color:var(--accent-hover)}
 :lang(zh) h1,:lang(zh) h2 {letter-spacing:0;line-height:1.3}
 @media(max-width:760px) {
 header {height:auto;min-height:68px;padding:14px 4%;gap:12px;flex-wrap:wrap}
@@ -332,3 +336,7 @@ footer {align-items:center}
 footer {gap:20px;font-size:10px}
 .footer-links {gap:16px}
 }
+
+a:hover,.tool:hover,.group-reset:hover {color:var(--accent)}
+a.primary:hover {color:var(--accent-ink)}
+.button:not(.primary):hover {border-color:var(--accent);color:var(--accent)}
