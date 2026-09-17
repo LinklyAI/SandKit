@@ -1,0 +1,17 @@
+{
+  "name": "@linkly-ai/sandkit",
+  "version": "0.1.0",
+  "description": "Images and words, brought to life as interactive sand art. WebGL2 + agent skills.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Linkly AI",
+  "repository": { "type": "git", "url": "git+https://github.com/LinklyAI/SandKit.git" },
+  "homepage": "https://github.com/LinklyAI/SandKit#readme",
+  "bugs": "https://github.com/LinklyAI/SandKit/issues",
+  "keywords": ["particles", "webgl", "sand", "animation", "agent-skills", "codex", "depth-map"],
+  "types": "./src/index.d.ts",
+  "exports": { ".": { "types": "./src/index.d.ts", "default": "./src/index.js" }, "./react": { "types": "./react/index.d.ts", "default": "./react/index.js" } },
+  "files": ["src", "react", "skills", "LICENSE", "README.md"],
+  "scripts": { "dev": "node scripts/serve.mjs", "test": "node --test tests/*.test.js", "check": "node scripts/check.mjs", "build": "node scripts/build.mjs" },
+  "engines": { "node": ">=22" }
+}

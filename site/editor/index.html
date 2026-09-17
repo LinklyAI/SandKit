@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SandKit Editor — Shape every grain</title>
+<link rel="icon" href="../mark.svg">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="./editor.css">
+</head>
+<body class="editor">
+<header>
+<a href="../" class="brand">
+<img src="../mark.svg" alt="" width="25" height="25">SandKit <span>EDITOR / 01</span>
+</a>
+<nav>
+<a href="../">Showcase</a>
+<a href="https://linkly.ai/">Back to Linkly AI ↗</a>
+<button id="theme" aria-label="Toggle theme">◐</button>
+</nav>
+</header>
+<main class="workspace">
+<aside class="library">
+<p class="eyebrow">YOUR CANVAS</p>
+<h2>Shape & form</h2>
+<label for="source">Source</label>
+<select id="source">
+<option value="gallery">Sample carousel</option>
+<option value="brain">Brain</option>
+<option value="computer">Macintosh</option>
+<option value="books">Stack of books</option>
+<option value="typewriter">Typewriter</option>
+<option value="text">Your words</option>
+</select>
+<div id="thumbnails">
+</div>
+<section id="text-settings" hidden>
+<label for="words">Words</label>
+<input id="words" value="LINKLY AI" maxlength="100">
+<label for="font">Typeface</label>
+<select id="font">
+<option value="system-ui">System sans</option>
+<option value="Georgia">Editorial serif</option>
+<option value="monospace">Monospace</option>
+</select>
+<label for="weight">Weight</label>
+<select id="weight">
+<option>800</option>
+<option>400</option>
+<option>600</option>
+<option>900</option>
+</select>
+<label for="spacing">Letter spacing (em)</label>
+<input id="spacing" type="number" min="-0.05" max="0.2" step="0.01" value="0.02">
+<label for="extrude">Extrusion (px)</label>
+<input id="extrude" type="range" min="0" max="60" value="24">
+<button id="apply-text" class="button primary">Apply text →</button>
+</section>
+<section class="art-note">
+<p class="eyebrow">CUSTOM ARTWORK</p>
+<p>Create your own line art and depth maps with the Codex skills.</p>
+<a href="https://github.com/LinklyAI/SandKit/blob/main/GETTING_STARTED.md">Get started in Codex ↗</a>
+</section>
+<button id="reset" class="button">Reset parameters</button>
+</aside>
+<section class="viewport">
+<div class="toolbar">
+<div>
+<button id="play" class="tool">Pause</button>
+<button id="replay" class="tool">Replay ↻</button>
+</div>
+<div>
+<label class="sr-only" for="view">View channel</label>
+<select id="view">
+<option value="particles">Particles</option>
+<option value="line">Line art</option>
+<option value="depth">Depth map</option>
+<option value="overlay">Alignment overlay</option>
+</select>
+<label class="sr-only" for="aspect">Canvas aspect</label>
+<select id="aspect">
+<option value="auto">Fit</option>
+<option value="1/1">1:1</option>
+<option value="16/9">16:9</option>
+<option value="9/16">9:16</option>
+</select>
+</div>
+</div>
+<div class="canvas-wrap">
+<div id="frame">
+<canvas id="canvas" aria-label="Interactive sand-art preview">
+</canvas>
+<canvas id="inspection" aria-label="Source and depth alignment preview" hidden>
+</canvas>
+</div>
+</div>
+<div class="statusbar">
+<span id="status" role="status">Preparing canvas…</span>
+<span id="mode">LIVE PREVIEW</span>
+</div>
+<div class="export">
+<div class="export-head">
+<span>CONFIGURATION</span>
+<div>
+<button class="tool" id="apply-config">Apply JSON</button>
+<button class="tool" id="copy">Copy JSON</button>
+<button class="tool" id="download">Download</button>
+<button class="tool" id="import">Import</button>
+<button class="tool" id="share">Share link ↗</button>
+</div>
+</div>
+<textarea id="config" spellcheck="false" aria-label="JSON configuration">
+</textarea>
+<input id="file" type="file" accept="application/json" hidden>
+</div>
+<p id="message" role="status">
+</p>
+</section>
+<aside class="inspector">
+<div class="inspector-title">
+<p class="eyebrow">THE DETAILS</p>
+<h2>Make it feel right.</h2>
+</div>
+<label for="preset">Starting point</label>
+<select id="preset">
+<option value="classic">Classic ink</option>
+<option value="soft">Soft atmosphere</option>
+<option value="bold">Bold impression</option>
+<option value="quiet">Quiet study</option>
+</select>
+<section class="palette">
+<label>Light theme ink</label>
+<div id="colors">
+</div>
+<label>Dark theme ink</label>
+<div id="dark-colors">
+</div>
+</section>
+<div id="controls">
+</div>
+<p class="small">↻ Settings marked with a circle resample the image after a short pause. Other settings update live. Reduced-motion preferences are respected.</p>
+</aside>
+</main>
+<script type="module" src="./editor.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+name: Bug report
+description: Report a rendering, editor or skill problem
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and a minimal reproduction.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and configuration
+      description: Browser, OS, device, SandKit commit, config and source dimensions. Do not include private images.
+    validations:
+      required: true

@@ -1,0 +1,308 @@
+:root {
+  --bg:#fffbf9;
+  --panel:#ffffff;
+  --ink:#0a0a0a;
+  --muted:#737373;
+  --line:#e5e5e5;
+  --accent:#b45309;
+  --soft:#fef3c7;
+  color-scheme:light;
+  font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink)}
+
+:root.dark {
+  --bg:#181613;
+  --panel:#171717;
+  --ink:#fafafa;
+  --muted:#a1a1a1;
+  --line:#282828;
+  --accent:#fbbf24;
+  --soft:#352914;
+  color-scheme:dark}
+* {
+  box-sizing:border-box}
+body {
+  margin:0}
+a {
+  color:inherit;
+  text-decoration:none}
+button,input,select,textarea {
+  font:inherit}
+button,a.button {
+  cursor:pointer}
+button {
+  color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:4px}
+header {
+  height:86px;
+  max-width:1440px;
+  margin:auto;
+  padding:0 4%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line)}
+.brand {
+  font-size:24px;
+  font-weight:750;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  letter-spacing:-1px}
+.brand span {
+  font-size:11px;
+  font-weight:450;
+  color:var(--muted);
+  letter-spacing:0;
+  margin-left:8px}
+nav {
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:12px}
+nav button {
+  background:none;
+  border:1px solid var(--line);
+  border-radius:50%;
+  width:32px;
+  height:32px}
+main.showcase {
+  max-width:1440px;
+  margin:auto}
+.hero {
+  display:grid;
+  grid-template-columns:1fr;
+  align-items:center;
+  min-height:660px;
+  padding:80px 4% 32px}
+.eyebrow {
+  font-size:10px;
+  letter-spacing:2px;
+  font-weight:650;
+  color:var(--muted)}
+h1 {
+  font-family:inherit;
+  font-weight:300;
+  font-size:clamp(40px,5.2vw,72px);
+  line-height:1.03;
+  letter-spacing:-2.5px;
+  margin:28px 0}
+.lede {
+  font-size:18px;
+  line-height:1.7;
+  color:var(--muted)}
+.actions {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:28px 0}
+.button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  background:var(--panel);
+  color:var(--ink);
+  border-radius:999px;
+  padding:12px 18px;
+  font-size:12px;
+  font-weight:600;
+  white-space:nowrap}
+.primary {
+  background:var(--ink);
+  color:var(--bg);
+  border-color:var(--ink)}
+.small {
+  font-size:11px;
+  line-height:1.6;
+  color:var(--muted)}
+.stage {
+  position:relative}
+.hero-stage {
+  height:clamp(360px,43vw,620px)}
+.stage canvas {
+  width:100%;
+  height:100%;
+  display:block}
+.stage img {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain}
+.stage-foot {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  justify-content:space-between;
+  font-size:9px;
+  letter-spacing:1px;
+  color:var(--muted);
+  pointer-events:none}
+.sample-bar {
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:24px}
+.sample-bar button {
+  border:0;
+  background:none;
+  color:var(--muted);
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:12px}
+.sample-bar .selected {
+  color:var(--accent);
+  background:var(--soft)}
+h2 {
+  font-family:inherit;
+  font-weight:300;
+  font-size:clamp(32px,4vw,52px);
+  line-height:1.12;
+  letter-spacing:-1.5px;
+  margin:20px 0}
+section p {
+  line-height:1.7;
+  color:var(--muted)}
+.text-play {
+  padding:80px 4%;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:28px;
+  border-bottom:1px solid var(--line)}
+.text-panel label {
+  display:block;
+  font-size:9px;
+  letter-spacing:1.5px;
+  margin-bottom:12px}
+.input-row {
+  display:flex;
+  gap:10px}
+.input-row input {
+  width:100%;
+  min-width:0;
+  border:0;
+  border-bottom:1px solid var(--line);
+  padding:8px;
+  background:transparent;
+  color:var(--ink);
+  font-size:20px}
+.text-stage {
+  height:clamp(300px,32vw,460px)}
+.text-stage canvas {
+  width:100%;
+  height:100%}
+.create {
+  text-align:center;
+  padding:90px 5%;
+  border-bottom:1px solid var(--line)}
+.create .actions {
+  justify-content:center;
+  font-size:12px;
+  gap:30px}
+.prompt {
+  max-width:800px;
+  margin:30px auto;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:22px;
+  display:flex;
+  gap:20px;
+  align-items:center;
+  text-align:left}
+.prompt code {
+  font-size:12px;
+  line-height:1.8;
+  overflow-wrap:anywhere}
+.product {
+  padding:70px 5%;
+  text-align:center}
+footer {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  max-width:1440px;
+  margin:auto;
+  border-top:1px solid var(--line);
+  padding:30px 4%;
+  font-size:11px;
+  color:var(--muted)}
+[hidden] {
+  display:none!important}
+@media(max-width:760px) {
+  header {
+  height:72px}
+.brand span {
+  display:none}
+nav {
+  gap:12px;
+  font-size:10px}
+.hero {
+  grid-template-columns:1fr;
+  padding-top:45px}
+.hero-stage {
+  height:390px}
+h1 {
+  letter-spacing:-2px}
+.sample-bar {
+  flex-wrap:wrap;
+  gap:0;
+  padding:12px}
+.text-play {
+  grid-template-columns:1fr;
+  gap:25px;
+  padding:45px 5%}
+.prompt {
+  flex-direction:column}
+.input-row {
+  flex-wrap:wrap}
+.stage-foot {
+  font-size:8px}
+.hero-copy .small {
+  display:none}
+footer {
+  flex-wrap:wrap}
+}
+
+/* Shared visual language with Linkly AI's landing page. */
+.hero {background:linear-gradient(180deg,transparent 50%,var(--soft));border-radius:0 0 24px 24px}
+.hero-copy .eyebrow {display:inline-block;border:1px solid var(--line);border-radius:999px;background:var(--panel);padding:8px 14px;letter-spacing:1px}
+.primary {background:#f59e0b;border-color:#f59e0b;color:#1c1206}
+.primary:hover {background:#d97706;border-color:#d97706}
+.text-play {text-align:center}
+.text-panel {min-width:0;width:100%}
+#words {max-width:720px;margin:auto;text-align:left}
+.text-stage {margin-top:20px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+.language-link {border:1px solid var(--line);padding:7px 10px;border-radius:8px;white-space:nowrap}
+:lang(zh) h1,:lang(zh) h2 {letter-spacing:0;line-height:1.3}
+@media(max-width:760px) {nav {gap:8px}.brand {font-size:20px}header {padding:0 4%}nav a {font-size:11px}.hero-copy .eyebrow {font-size:9px}.text-stage {height:280px}}
+
+.showcase .hero {text-align:center;gap:38px}
+.hero-copy {max-width:900px;margin:0 auto}
+.hero-copy .actions {justify-content:center}
+.hero-copy .lede {max-width:700px;margin:24px auto}
+.hero-stage {width:100%;max-width:1120px;margin:auto;border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:0 2px 8px #00000006}
+.hero-stage .stage-foot {bottom:20px;left:24px;right:24px}
+.hero-copy h1 br {display:none}
+.hero-copy h1 {text-wrap:balance}
+.showcase .button {min-height:48px;padding:12px 28px;font-size:15px}
+body:not(.editor)>header {height:72px;border:1px solid var(--line);border-radius:18px;margin:16px auto 0;max-width:1200px;background:var(--panel);padding:0 24px}
+.showcase .sample-bar {border-top:0;margin:0 4%}
+.showcase .product {background:linear-gradient(180deg,transparent,var(--soft));border-radius:24px;margin-bottom:40px}
+@media(max-width:760px) {
+body:not(.editor)>header {margin:10px 12px 0;padding:12px 16px;height:auto;min-height:68px;gap:12px;flex-wrap:wrap;justify-content:center}
+body:not(.editor)>header nav {flex-wrap:wrap;justify-content:center}
+.showcase .hero {padding-top:44px;gap:28px}
+.hero-copy h1 {font-size:40px;letter-spacing:-1px}
+.hero-stage {height:360px}
+.hero-stage .stage-foot {left:12px;right:12px;bottom:12px;letter-spacing:0}
+}
