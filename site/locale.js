@@ -1,5 +1,10 @@
 // Shared by static HTML generation and browser controls. English is the source locale.
 export const zh = {
+'BUILT WITH':'BUILT WITH',
+'Linkly AI':'Linkly AI',
+'The knowledge brain for AI agents. Search and read your notes, documents, audio and videos from your agent.':'AI Agent 的知识大脑。让 Agent 检索和阅读你的笔记、文档、音频与视频。',
+'Get Linkly AI ↗':'获取 Linkly AI ↗','Explore Linkly AI ↗':'了解 Linkly AI ↗',
+
 'SandKit — Sand animation skills':'SandKit — 沙画动画技能',
 'Sand animation skills.':'沙画动画 Skills',
 'Create sand art in Codex. Build with WebGL2.':'在 Codex 中制作沙画，用 WebGL2 构建动画。',

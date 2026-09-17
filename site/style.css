@@ -123,7 +123,7 @@ h1 {
 .stage {
   position:relative}
 .hero-stage {
-  height:clamp(320px,38vw,500px)}
+  height:clamp(480px,58vw,720px)}
 .stage canvas {
   width:100%;
   height:100%;
@@ -290,8 +290,8 @@ footer {
 .text-panel {min-width:0;width:100%}
 .text-panel label {font-size:11px}
 #words {max-width:720px;margin:auto}
-.text-stage {height:clamp(240px,28vw,360px);margin-top:12px}
-.create {text-align:left}
+.text-stage {height:clamp(400px,48vw,580px);margin-top:12px}
+.create {text-align:left;padding:88px 4% 96px}
 .create .actions {justify-content:flex-start;margin-bottom:0}
 .prompt {max-width:none;margin:20px 0;padding:16px;background:transparent;border:0;border-left:2px solid var(--line)}
 .language-link {border:1px solid var(--line);padding:7px 10px;white-space:nowrap}
@@ -303,7 +303,22 @@ header {height:auto;min-height:68px;padding:14px 4%;gap:12px;flex-wrap:wrap}
 nav {gap:10px;flex-wrap:wrap}
 .brand {font-size:20px}
 .hero {padding-top:32px}
-.hero-stage {height:320px}
-.text-stage {height:240px}
+.hero-stage {height:440px}
+.text-stage {height:360px}
 .prompt {align-items:flex-start}
+}
+
+.create h2,.product h2 {font-size:clamp(28px,3.4vw,40px);margin:0 0 24px}
+.create>p {font-size:17px;max-width:800px}
+.create .prompt {padding:24px;margin:32px 0;gap:28px}
+.create .prompt code {font-size:15px;line-height:1.9}
+.create .button,.product .button {padding:14px 22px;font-size:14px}
+.product {padding:80px 4%;text-align:left}
+.product>p {max-width:760px;font-size:16px}
+.product .eyebrow {font-size:11px;color:var(--accent);margin:0 0 20px}
+.product .actions {margin-bottom:0}
+@media(max-width:760px) {
+.create,.product {padding:64px 5%}
+.create .prompt {padding:16px}
+.create .prompt code {font-size:13px}
 }

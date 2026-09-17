@@ -12,7 +12,7 @@ export function renderPage(template, language = 'en', editor = false) {
         html = html.replace('<head>', `<head>\n<base href="${editor ? '../../editor/' : '../'}">`);
         if (editor) html = html.replaceAll('href="../"', 'href="../zh/"');
         else html = html.replaceAll('href="./editor/"', 'href="./zh/editor/"').replace('href="#create"', 'href="./zh/#create"').replace('class="brand" href="./"', 'class="brand" href="./zh/"');
-        html = html.replaceAll('href="https://linkly.ai/"', 'href="https://linkly.ai/zh"');
+        html = html.replaceAll('href="https://linkly.ai/#get-started"', 'href="https://linkly.ai/zh#get-started"').replaceAll('href="https://linkly.ai/"', 'href="https://linkly.ai/zh"');
     }
     const page = (isZh ? 'zh/' : '') + (editor ? 'editor/' : '');
     const canonical = publicBase + page;

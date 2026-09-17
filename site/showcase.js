@@ -17,8 +17,14 @@ $('#copy-prompt').onclick = async () => {
 const sharedText = new URLSearchParams(location.search).get('text');
 if (sharedText !== null) $('#text').value = sharedText.slice(0, 40);
 let kit, text;
+const textScale = () => {
+    const { width, height } = $('#text-art').getBoundingClientRect();
+    return Math.min(2, 0.94 * width / Math.max(1, Math.min(width, height)));
+};
+const textResize = new ResizeObserver(() => { text?.setOptions({ pictureScale: textScale() }).catch(error => { $('#text-status').textContent = t(error.message); }); });
+textResize.observe($('#text-art'));
 try {
-    kit = new SandKit($('#art'), { shapes: samples, options: { pictureScale: 0.88, color: '#4a71ee', colorDark: '#b6c4ff' }, onStatus: s => { $('#status').textContent = s.state === 'ready' ? locale === 'zh' ? `${s.count.toLocaleString()} 粒沙 · 移动光标探索` : `${s.count.toLocaleString()} grains · move to explore` : s.state === 'error' ? s.message : t('Gathering grains…'); } });
+    kit = new SandKit($('#art'), { shapes: samples, options: { pictureScale: 1.02, color: '#4a71ee', colorDark: '#b6c4ff' }, onStatus: s => { $('#status').textContent = s.state === 'ready' ? locale === 'zh' ? `${s.count.toLocaleString()} 粒沙 · 移动光标探索` : `${s.count.toLocaleString()} grains · move to explore` : s.state === 'error' ? s.message : t('Gathering grains…'); } });
     await kit.ready;
 }
 catch (e) {
@@ -32,7 +38,7 @@ for (const b of document.querySelectorAll('[data-shape]'))
         b.classList.add('selected');
     };
 try {
-    text = new SandKit($('#text-art'), { shapes: [textShape($('#text').value, { fontFamily: 'monospace' })], options: { pictureScale: 1.9, count: 42000, color: '#4a71ee', colorDark: '#b6c4ff', tilt: 0.22 } });
+    text = new SandKit($('#text-art'), { shapes: [textShape($('#text').value, { fontFamily: 'monospace' })], options: { pictureScale: textScale(), count: 42000, color: '#4a71ee', colorDark: '#b6c4ff', tilt: 0.22 } });
     await text.ready;
 }
 catch (e) {
@@ -50,7 +56,7 @@ $('#words').onsubmit = async (e) => {
         $('#text-status').textContent = t(error.message);
     }
 };
-window.addEventListener('pagehide', () => { kit?.dispose(); text?.dispose(); }, { once: true });
+window.addEventListener('pagehide', () => { textResize.disconnect(); kit?.dispose(); text?.dispose(); }, { once: true });
 
 document.querySelector('[data-language]').addEventListener('click', event => {
     const url = new URL(event.currentTarget.href);
