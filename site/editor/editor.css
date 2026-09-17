@@ -38,6 +38,22 @@
   background:var(--bg);
   color:var(--ink);
   font-size:11px}
+.editor select {
+  appearance:none;
+  -webkit-appearance:none;
+  min-height:36px;
+  line-height:18px;
+  padding:8px 36px 8px 12px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23737373' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+  background-size:16px 16px;
+  cursor:pointer}
+.dark .editor select {
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23a1a1a1' stroke-width='1.5' stroke-linecap='square'/%3E%3C/svg%3E")}
+@media(forced-colors:active) {
+  .editor select {appearance:auto;-webkit-appearance:auto;background-image:none;padding-right:12px}
+}
 .viewport {
   min-width:0;
   display:flex;
