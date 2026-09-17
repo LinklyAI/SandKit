@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Deutsch](docs/README.de.md) | [Русский](docs/README.ru.md)
+
 <p align="center"><img src="site/mark.svg" width="64" alt="SandKit"></p>
 
 <h1 align="center">SandKit</h1>
@@ -57,7 +59,7 @@ Serve the `src/` directory unchanged, including `sampler.worker.js`:
 <script type="module">
   import { SandKit, textShape } from './src/index.js';
   const sand = new SandKit(document.querySelector('#sand'), {
-    shapes: [textShape('Hello, world.')],
+    shapes: [textShape('LINKLY AI')],
     options: { color: '#4a71ee', count: 40000 },
   });
   await sand.ready;
@@ -78,7 +80,7 @@ import { SandCanvas } from './sandkit/react/index.js';
 import { textShape } from './sandkit/src/index.js';
 
 export function Hero() {
-  const shapes = useMemo(() => [textShape('Hello, world.')], []);
+  const shapes = useMemo(() => [textShape('LINKLY AI')], []);
   return <div style={{ height: 500 }}><SandCanvas shapes={shapes} /></div>;
 }
 ```
@@ -105,4 +107,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports should include browser, devi
 
 Built by **[Linkly AI](https://linkly.ai/)**. Explore the product behind the experiment.
 
-The showcase and editor ship with English and Chinese pages, crawlable static HTML, localized metadata, language links, and a sitemap. The visual style follows Linkly AI’s warm-white and amber palette.
+The showcase and editor ship with English and Chinese pages, crawlable static HTML, localized metadata, language links, and a sitemap. The visual style follows Linkly AI’s warm-white background and SandKit’s blue accents.
+
+## Built with Linkly AI
+
+[Linkly AI](https://linkly.ai/) is the knowledge brain for AI agents. Let your agent search and read your notes, documents, audio and videos.
+
+[Get Linkly AI](https://linkly.ai/#get-started) · [X @linkly_ai](https://x.com/linkly_ai)

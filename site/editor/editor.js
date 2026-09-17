@@ -12,6 +12,11 @@ const message = text => { $('#message').textContent = t(text); };
 const textOptions = () => ({ fontFamily: $('#font').value, fontWeight: Number($('#weight').value), letterSpacing: Number($('#spacing').value), extrude: Number($('#extrude').value) });
 const config = () => ({ version: 1, source, text: $('#words').value, typography: textOptions(), options, dark: document.documentElement.classList.contains('dark') });
 const syncConfig = () => { $('#config').value = JSON.stringify(config(), null, 2); };
+document.querySelector('[data-language]').addEventListener('change', event => {
+    const url = new URL(event.currentTarget.value, document.baseURI);
+    url.hash = 'config=' + encodeURIComponent(JSON.stringify(config()));
+    location.assign(url.href);
+});
 function syncControls() {
     for (const [k] of Object.entries(PARAMETERS))
         for (const input of document.querySelectorAll(`[data-key="${k}"]`))
@@ -267,9 +272,3 @@ $('#file').onchange = async () => {
     $('#file').value = '';
 };
 window.addEventListener('pagehide', () => { clearTimeout(timer); kit?.dispose(); }, { once: true });
-
-document.querySelector('[data-language]').addEventListener('click', event => {
-    const url = new URL(event.currentTarget.href);
-    url.hash = 'config=' + encodeURIComponent(JSON.stringify(config()));
-    event.currentTarget.href = url.href;
-});

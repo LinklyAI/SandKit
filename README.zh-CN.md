@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README.zh-CN.md) | [日本語](docs/README.ja.md) | [한국어](docs/README.ko.md) | [Español](docs/README.es.md) | [Deutsch](docs/README.de.md) | [Русский](docs/README.ru.md)
+
 # SandKit
 
 把图片和文字变成可交互的沙画。由 [Linkly AI](https://linkly.ai/) 开源，采用 [MIT](LICENSE) 协议。
@@ -20,8 +22,8 @@ cd SandKit
 node scripts/serve.mjs
 ```
 
-- 展示页：`http://127.0.0.1:4173/site/`
-- Editor：`http://127.0.0.1:4173/site/editor/`
+- 展示页：`http://127.0.0.1:4173/site/zh/`
+- Editor：`http://127.0.0.1:4173/site/zh/editor/`
 
 ## 内容
 
@@ -36,4 +38,10 @@ node scripts/serve.mjs
 
 运行和 API 说明见 [英文 README](README.md)。公开演示计划部署在官网域名下；当前仓库不代表已完成线上部署或包发布。
 
-展示页与编辑器支持中英文，构建输出可抓取的静态 HTML、独立语言元数据与 sitemap，沿用 Linkly AI 官网的暖白与琥珀色风格。
+展示页与编辑器支持中英文，构建输出可抓取的静态 HTML、独立语言元数据与 sitemap，沿用 Linkly AI 官网的暖白背景与 SandKit 蓝色主题。
+
+## Built with Linkly AI
+
+[Linkly AI](https://linkly.ai/zh) 是 AI Agent 的知识大脑，让 Agent 检索和阅读你的笔记、文档、音频与视频。
+
+[获取 Linkly AI](https://linkly.ai/zh#get-started) · [X @linkly_ai](https://x.com/linkly_ai)

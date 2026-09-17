@@ -42,7 +42,9 @@ ${editor ? `<meta name="description" content="${description}">` : ''}
 <script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'SoftwareSourceCode', name: 'SandKit', description, url: canonical, codeRepository: 'https://github.com/LinklyAI/SandKit', license: 'https://opensource.org/license/mit', programmingLanguage: 'JavaScript', inLanguage: language, author: { '@type': 'Organization', name: 'Linkly AI', url: 'https://linkly.ai/' } })}</script>
 `;
     const alternate = editor ? (isZh ? './' : '../zh/editor/') : (isZh ? './' : './zh/');
-    html = html.replace('</head>', metadata + '</head>').replace('<nav>', `<nav>\n<a class="language-link" data-language href="${alternate}" lang="${isZh ? 'en' : 'zh'}" hreflang="${isZh ? 'en' : 'zh'}">${isZh ? 'English' : '中文'}</a>`);
+    const current = editor ? (isZh ? '../zh/editor/' : './') : (isZh ? './zh/' : './');
+    const languageSelect = `<label class="language-control"><span class="sr-only">${isZh ? '语言' : 'Language'}</span><select class="language-select" data-language aria-label="${isZh ? '语言' : 'Language'}"><option value="${isZh ? alternate : current}"${isZh ? '' : ' selected'}>English</option><option value="${isZh ? current : alternate}"${isZh ? ' selected' : ''}>简体中文</option></select></label>`;
+    html = html.replace('</head>', metadata + '</head>').replace('<nav>', `<nav>\n${languageSelect}`);
     return html;
 }
 export function sitemap() {

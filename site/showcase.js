@@ -3,6 +3,11 @@ import { SandKit, textShape } from '../src/index.js';
 import { samples, prompt } from './samples.js';
 const currentPrompt = locale === 'zh' ? translatedPrompt : prompt;
 const $ = s => document.querySelector(s);
+document.querySelector('[data-language]').addEventListener('change', event => {
+    const url = new URL(event.currentTarget.value, document.baseURI);
+    url.searchParams.set('text', $('#text').value);
+    location.assign(url.href);
+});
 $('#theme').onclick = () => document.documentElement.classList.toggle('dark');
 $('#prompt').textContent = currentPrompt;
 $('#copy-prompt').onclick = async () => {
@@ -57,9 +62,3 @@ $('#words').onsubmit = async (e) => {
     }
 };
 window.addEventListener('pagehide', () => { textResize.disconnect(); kit?.dispose(); text?.dispose(); }, { once: true });
-
-document.querySelector('[data-language]').addEventListener('click', event => {
-    const url = new URL(event.currentTarget.href);
-    url.searchParams.set('text', $('#text').value);
-    event.currentTarget.href = url.href;
-});
