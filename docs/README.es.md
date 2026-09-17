@@ -6,7 +6,7 @@
 
 Convierte imágenes y texto en animaciones de arena interactivas.
 
-[MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[Demo](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
 
 ## Empezar en Codex
 

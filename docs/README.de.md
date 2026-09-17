@@ -6,7 +6,7 @@
 
 Bilder und Text als interaktive Sandanimationen.
 
-[MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[Demo](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
 
 ## In Codex starten
 

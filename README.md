@@ -6,7 +6,7 @@
 <p align="center">Images and words, brought to life as interactive sand art.</p>
 <p align="center"><a href="LICENSE">MIT</a> · WebGL2 · Zero runtime dependencies · Two agent skills</p>
 <p align="center"><a href="https://github.com/LinklyAI/SandKit/actions/workflows/check.yml"><img src="https://github.com/LinklyAI/SandKit/actions/workflows/check.yml/badge.svg" alt="Checks"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"></a></p>
-<p align="center"><a href="GETTING_STARTED.md">Try it in Codex</a> · <a href="#run-locally">Run the editor</a> · <a href="https://linkly.ai/">Made by Linkly AI ↗</a> · <a href="README.zh-CN.md">简体中文</a></p>
+<p align="center"><a href="https://linkly.ai/sandkit">Demo</a> · <a href="GETTING_STARTED.md">Try it in Codex</a> · <a href="#run-locally">Run the editor</a> · <a href="https://linkly.ai/">Made by Linkly AI ↗</a> · <a href="README.zh-CN.md">简体中文</a></p>
 
 ![Example artwork](skills/sandkit-art/assets/typewriter.webp)
 
@@ -37,7 +37,7 @@ node scripts/serve.mjs
 
 With a working pnpm installation, `pnpm dev`, `pnpm test`, `pnpm check`, and `pnpm build` are equivalent script entrypoints. Do not open HTML using `file://`; workers and image loading need HTTP.
 
-The public showcase is intended for the Linkly AI website. This repository does not claim that a production demo or registry package has already been published.
+Official demo: [linkly.ai/sandkit](https://linkly.ai/sandkit) (available after the website release). Package publication is separate.
 
 ## What is included
 

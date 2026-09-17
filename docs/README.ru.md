@@ -6,7 +6,7 @@
 
 Превращайте изображения и текст в интерактивные песочные анимации.
 
-[MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[Демо](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
 
 ## Начало работы в Codex
 

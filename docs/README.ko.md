@@ -6,7 +6,7 @@
 
 이미지와 텍스트를 인터랙티브 모래 애니메이션으로 만드세요.
 
-[MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[데모](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
 
 ## Codex에서 시작하기
 

@@ -6,7 +6,7 @@
 
 画像と文字をインタラクティブな砂のアニメーションに。
 
-[MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
+[デモ](https://linkly.ai/sandkit) · [MIT](../LICENSE) · WebGL2 · [Linkly AI](https://linkly.ai/)
 
 ## Codex で始める
 
