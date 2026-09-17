@@ -21,9 +21,12 @@
 </div>
 
 <!-- DEMO:START -->
-<!-- Insert the supplied GIF here, linked to the official demo. Store it at docs/assets/demo.gif. -->
+https://github.com/user-attachments/assets/45e6853f-a03a-4eb9-80b3-390d7aa9b94a
+
 <p align="center"><a href="https://linkly.ai/sandkit">Explore the demo →</a></p>
 <!-- DEMO:END -->
+
+
 
 ## Why SandKit
 
