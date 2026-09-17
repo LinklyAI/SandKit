@@ -160,7 +160,7 @@ function restore(raw) {
     $('#source').value = source;
     $('#words').value = String(raw.text ?? 'LINKLY AI').slice(0, 100);
     const t = raw.typography ?? {};
-    $('#font').value = ['system-ui', 'Georgia', 'monospace'].includes(t.fontFamily) ? t.fontFamily : 'system-ui';
+    $('#font').value = ['system-ui', 'Georgia', 'monospace'].includes(t.fontFamily) ? t.fontFamily : 'monospace';
     $('#weight').value = [400, 600, 800, 900].includes(t.fontWeight) ? String(t.fontWeight) : '800';
     $('#spacing').value = Math.max(-0.05, Math.min(0.2, Number(t.letterSpacing) || 0));
     $('#extrude').value = Math.max(0, Math.min(60, Number(t.extrude) || 0));

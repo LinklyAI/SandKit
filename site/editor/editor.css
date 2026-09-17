@@ -33,7 +33,7 @@
 .editor select,.library input:not([type=range]) {
   width:100%;
   border:1px solid var(--line);
-  border-radius:5px;
+  border-radius:0;
   padding:9px;
   background:var(--bg);
   color:var(--ink);
@@ -61,7 +61,7 @@
   background:none;
   border:1px solid var(--line);
   padding:7px 10px;
-  border-radius:5px;
+  border-radius:0;
   font-size:10px;
   white-space:nowrap}
 .canvas-wrap {
@@ -109,7 +109,7 @@
   resize:none;
   background:var(--bg);
   border:1px solid var(--line);
-  border-radius:5px;
+  border-radius:0;
   padding:10px;
   font:11px/1.5 monospace;
   color:var(--ink)}
@@ -154,7 +154,7 @@ input[type=range] {
   width:68px;
   background:var(--bg);
   border:1px solid var(--line);
-  border-radius:3px;
+  border-radius:0;
   font:10px monospace;
   text-align:right;
   color:var(--ink);
@@ -168,7 +168,7 @@ input[type=range] {
   width:24px;
   height:24px;
   border:2px solid transparent;
-  border-radius:50%;
+  border-radius:0;
   padding:0}
 .swatch.active {
   outline:2px solid var(--accent);
@@ -182,7 +182,7 @@ input[type=range] {
   padding:7px;
   border:1px solid var(--line);
   background:#fff;
-  border-radius:7px}
+  border-radius:0}
 .thumb img {
   width:100%;
   display:block}

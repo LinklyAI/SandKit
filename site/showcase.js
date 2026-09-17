@@ -32,7 +32,7 @@ for (const b of document.querySelectorAll('[data-shape]'))
         b.classList.add('selected');
     };
 try {
-    text = new SandKit($('#text-art'), { shapes: [textShape($('#text').value)], options: { pictureScale: 1.9, count: 42000, color: '#4a71ee', colorDark: '#b6c4ff', tilt: 0.22 } });
+    text = new SandKit($('#text-art'), { shapes: [textShape($('#text').value, { fontFamily: 'monospace' })], options: { pictureScale: 1.9, count: 42000, color: '#4a71ee', colorDark: '#b6c4ff', tilt: 0.22 } });
     await text.ready;
 }
 catch (e) {
@@ -43,7 +43,7 @@ $('#words').onsubmit = async (e) => {
     if (!text)
         return;
     try {
-        await text.setShapes([textShape($('#text').value)]);
+        await text.setShapes([textShape($('#text').value, { fontFamily: 'monospace' })]);
         $('#text-status').textContent = '';
     }
     catch (error) {

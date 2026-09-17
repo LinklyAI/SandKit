@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SandKit — Every grain tells a story</title>
+<title>SandKit — Sand animation skills</title>
 <meta name="description" content="Turn images and words into interactive sand art. Open-source WebGL animation and two creative skills for Codex, by Linkly AI.">
 <meta name="theme-color" content="#fffbf9">
 <link rel="icon" href="./mark.svg">
@@ -24,13 +24,13 @@
 <section class="hero">
 <div class="hero-copy">
 <p class="eyebrow">OPEN SOURCE · WEBGL2 · AGENT SKILLS</p>
-<h1>Every grain <br>tells a story.</h1>
-<p class="lede">A little ink. A little depth.<br>Thousands of grains, coming to life.</p>
+<h1>Sand animation skills.</h1>
+<p class="lede">Create sand art in Codex. Build with WebGL2.</p>
 <div class="actions">
-<a class="button primary" href="#create">Make it yours ↗</a>
-<a class="button" href="./editor/">Open editor →</a>
+<a class="button primary" href="#create">Use in Codex ↗</a>
+<a class="button" href="./editor/">Editor →</a>
 </div>
-<p class="small">Move your cursor. Watch the perspective shift.</p>
+
 </div>
 <div class="stage hero-stage">
 <canvas id="art" aria-hidden="true">
@@ -38,29 +38,29 @@
 <img id="fallback" src="../skills/sandkit-art/assets/brain.webp" alt="Hand-drawn brain illustration" hidden>
 <div class="stage-foot">
 <span id="status" role="status">Gathering grains…</span>
-<span>01 — 04 / LIVE CANVAS</span>
+
 </div>
 </div>
 </section>
 <section class="sample-bar" aria-label="Choose a demonstration">
 <button data-shape="" class="selected">All shapes</button>
-<button data-shape="brain">The mind</button>
-<button data-shape="computer">The machine</button>
-<button data-shape="books">The library</button>
-<button data-shape="typewriter">The writer</button>
+<button data-shape="brain">Brain</button>
+<button data-shape="computer">Macintosh</button>
+<button data-shape="books">Books</button>
+<button data-shape="typewriter">Typewriter</button>
 </section>
 <section class="text-play">
 <div>
-<p class="eyebrow">A SMALL EXPERIMENT</p>
-<h2>Your words.<br>A thousand possibilities.</h2>
-<p>Type something and let it take shape.</p>
+
+<h2>Text demo</h2>
+
 </div>
 <div class="text-panel">
 <form id="words">
-<label for="text">YOUR WORDS</label>
+<label for="text">TEXT</label>
 <div class="input-row">
 <input id="text" maxlength="40" value="LINKLY AI" aria-label="Words to turn into sand">
-<button class="button primary">Bring to life →</button>
+<button class="button primary">Render →</button>
 </div>
 </form>
 <div class="text-stage">
@@ -72,25 +72,20 @@
 </div>
 </section>
 <section id="create" class="create">
-<p class="eyebrow">ONE PROMPT. YOUR NEXT CREATION.</p>
-<h2>Take the sand with you.</h2>
-<p>Make original artwork and build your own animation in Codex.<br>Two skills, example assets, and the code to make it happen.</p>
+
+<h2>Use in Codex</h2>
+<p>Two skills: prepare images and depth maps; build and tune animations.</p>
 <div class="prompt">
 <code id="prompt">
 </code>
 <button id="copy-prompt" class="button primary">Copy prompt</button>
 </div>
 <div class="actions">
-<a href="https://github.com/LinklyAI/SandKit/tree/main/skills">Explore the skills ↗</a>
-<a href="./editor/">Fine-tune in the editor →</a>
+<a href="https://github.com/LinklyAI/SandKit/tree/main/skills">Skills ↗</a>
+<a href="./editor/">Editor →</a>
 </div>
 </section>
-<section class="product">
-<span class="eyebrow">MADE AT LINKLY AI</span>
-<h2>Ideas deserve a place to grow.</h2>
-<p>Explore the product behind this experiment.</p>
-<a class="button primary" href="https://linkly.ai/">Discover Linkly AI ↗</a>
-</section>
+
 </main>
 <footer>
 <span>SandKit © Linkly AI · MIT</span>

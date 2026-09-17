@@ -18,7 +18,7 @@ for (const editor of [false, true]) {
             assert.equal(schema.inLanguage, language);
             assert.equal(schema.url, publicBase + page);
             if (language === 'zh') {
-                assert.ok(html.includes(editor ? '形状与素材' : '让每一粒沙，'));
+                assert.ok(html.includes(editor ? '形状与素材' : '沙画动画 Skills'));
                 assert.ok(html.includes('href="https://linkly.ai/zh"'));
                 if (!editor) assert.ok(html.includes('href="./zh/#create"'));
                 // All static source text has a translation unless it is a brand, code or ratio.

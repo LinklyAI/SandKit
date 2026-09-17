@@ -1,5 +1,12 @@
 // Shared by static HTML generation and browser controls. English is the source locale.
 export const zh = {
+'SandKit — Sand animation skills':'SandKit — 沙画动画技能',
+'Sand animation skills.':'沙画动画 Skills',
+'Create sand art in Codex. Build with WebGL2.':'在 Codex 中制作沙画，用 WebGL2 构建动画。',
+'Use in Codex ↗':'在 Codex 中使用 ↗','Editor →':'编辑器 →','Books':'书籍',
+'Text demo':'文字演示','TEXT':'文字','Render →':'生成 →','Use in Codex':'在 Codex 中使用',
+'Two skills: prepare images and depth maps; build and tune animations.':'两个技能：处理图片与深度图；编写与调试动画。','Skills ↗':'Skills ↗',
+
 'SandKit — Every grain tells a story':'SandKit — 让每一粒沙，汇成你的创意',
 'Turn images and words into interactive sand art. Open-source WebGL animation and two creative skills for Codex, by Linkly AI.':'让图片与文字化为可交互的沙画。Linkly AI 开源的 WebGL 动画、在线调试编辑器与两个 Codex 创作技能。',
 'by Linkly AI':'由 Linkly AI 创作','Back to Linkly AI ↗':'返回 Linkly AI ↗','Toggle color theme':'切换明暗主题','Toggle theme':'切换明暗主题',
